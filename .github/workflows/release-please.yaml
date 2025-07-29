@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write # Needed to create releases and update files
   pull-requests: write # Needed to create Release PRs
+  issues: write # Needed to create labels https://github.com/googleapis/release-please-action/issues/1105#issuecomment-2780292262
 
 jobs:
   release-please:
@@ -35,4 +36,3 @@ jobs:
           echo "Release created for components-versions: ${{ steps.release.outputs.components-versions_tag_name }}"
           echo "Release body for components-versions:"
           echo "${{ steps.release.outputs.components-versions_release_body }}"
-
