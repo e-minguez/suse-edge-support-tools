@@ -13,8 +13,8 @@
         { "type": "chore", "section": "Chores", "hidden": true }
       ],
       "component": "components-versions",
-      "include-component-in-tag": true, // To create the tag with the component name (for monorepos)
-      "separate-pull-requests": true // Each package gets its own release PR
+      "include-component-in-tag": true,
+      "separate-pull-requests": true
     }
   }
 }
