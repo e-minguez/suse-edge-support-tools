@@ -1,0 +1,20 @@
+{
+  "bootstrap-sha": "main",
+  "release-type": "simple",
+  "packages": {
+    "components-versions": {
+      "release-type": "python",
+      "changelog-path": "components-versions/CHANGELOG.md",
+      "package-json-path": "components-versions/pyproject.toml",
+      "changelog-sections": [
+        { "type": "feat", "section": "Features" },
+        { "type": "fix", "section": "Bug Fixes" },
+        { "type": "docs", "section": "Documentation" },
+        { "type": "chore", "section": "Chores", "hidden": true }
+      ],
+      "component": "components-versions",
+      "include-component-in-tag": true, // To create the tag with the component name (for monorepos)
+      "separate-pull-requests": true // Each package gets its own release PR
+    }
+  }
+}
